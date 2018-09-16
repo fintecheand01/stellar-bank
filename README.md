@@ -30,6 +30,11 @@ Download the SDK from [Stellar.org](https://github.com/stellar/java-stellar-sdk)
 Notice that this a jar file that needs to be imported into your local Maven repo before we can use it in our project as a dependency.
 
 
+```
+wget https://github.com/stellar/java-stellar-sdk/releases/download/0.3.2/stellar-sdk.jar
+```
+
+
 ### Import the jar into your local Maven repo
 
 Use the following command to import the SDK jar file into your Maven repo:
@@ -42,7 +47,7 @@ mvn install:install-file -Dfile=/<path to the sdk jar> -DgroupId=<package name> 
 For example :
 
 ```
-mvn install:install-file -Dfile=/Users/sunil_vishnubhotla/Downloads/stellar-sdk.jar -DgroupId=com.stellar.code -DartifactId=stellar -Dversion=0.1.14 -Dpackaging=jar
+mvn install:install-file -Dfile=/Users/orion/Downloads/stellar-sdk.jar -DgroupId=com.stellar.code -DartifactId=stellar -Dversion=0.3.2 -Dpackaging=jar
 
 ```
 
@@ -53,7 +58,7 @@ Then add the dependancy in your pom.xml file like so :
 <dependency>
      <groupId>com.stellar.code</groupId>
      <artifactId>stellar</artifactId>
-     <version>0.1.14</version>
+     <version>0.3.2</version>
 </dependency>
 
 ```
@@ -69,7 +74,7 @@ And simply run this command in the source root
 
 
 ```
-mvn springboot:run
+mvn spring-boot:run
 ```
 
 And point your browser to 
